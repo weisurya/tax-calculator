@@ -8,7 +8,7 @@ import (
 )
 
 func TestCreateInsertStatement(t *testing.T) {
-	mockTable := "item"
+	mockTable := "items"
 	mockField := "name, amount"
 	mockValue := "'test', 1"
 	expected := "INSERT INTO items(name, amount) VALUES('test', 1);"
